@@ -17,21 +17,25 @@
             // If your array's Length is less than 3, something went wrong
             if (cells.Length < 3)
             {
-                // Log error message and return null
-                return null; 
+                // Log error message and return nul
+                logger.LogError("Array length is less than 3");
+                return null;
             }
 
             // TODO: Grab the latitude from your array at index 0
             // You're going to need to parse your string as a `double`
             // which is similar to parsing a string as an `int`
+            double latitude = double.Parse(cells[0]);
             
             
             // TODO: Grab the longitude from your array at index 1
             // You're going to need to parse your string as a `double`
             // which is similar to parsing a string as an `int`
+            double longitude = double.Parse(cells[1]);
             
             
             // TODO: Grab the name from your array at index 2
+            string locationName = cells[2];
             
 
             // TODO: Create a TacoBell class
