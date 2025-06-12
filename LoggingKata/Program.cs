@@ -77,7 +77,7 @@ namespace LoggingKata
                     };
 
                     // If the distance is greater than the currently saved distance, update the distance variable and the two `ITrackable` variables you set above.
-                    if(corA.GetDistanceTo(corB) > distance)
+                    if (corA.GetDistanceTo(corB) > distance)
                     {
                         distance = corA.GetDistanceTo(corB);
                         tacoBell1 = locA;
